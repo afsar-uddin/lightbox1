@@ -11,7 +11,7 @@ $("body").append($overlay);
 $("#imageGallery a").click(function(event){
 	event.preventDefault();
 	var imageLocation = $(this).attr("href");
-	$overlay.show();
+	$overlay.show(500);
 
 	// Update overlay with the image linked in the link
 	$image.attr("src", imageLocation);
@@ -19,7 +19,7 @@ $("#imageGallery a").click(function(event){
 });
 
 $overlay.click(function(){
-	$overlay.hide();
+	$overlay.hide(500);
 });
 
  
